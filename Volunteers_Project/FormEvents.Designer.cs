@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             pnTop = new Panel();
+            btnDelete = new Button();
+            btnEdit = new Button();
+            btnAdd = new Button();
             lblUsername = new Label();
             btnLogin = new Button();
             dgvEvent = new DataGridView();
-            btnAdd = new Button();
-            btnEdit = new Button();
-            btnDelete = new Button();
             pnTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvEvent).BeginInit();
             SuspendLayout();
@@ -51,6 +51,39 @@
             pnTop.Name = "pnTop";
             pnTop.Size = new Size(947, 59);
             pnTop.TabIndex = 0;
+            // 
+            // btnDelete
+            // 
+            btnDelete.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            btnDelete.Location = new Point(373, 11);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(135, 37);
+            btnDelete.TabIndex = 12;
+            btnDelete.Text = "Удалить";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // btnEdit
+            // 
+            btnEdit.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            btnEdit.Location = new Point(197, 11);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(139, 37);
+            btnEdit.TabIndex = 11;
+            btnEdit.Text = "Редактировать";
+            btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
+            // 
+            // btnAdd
+            // 
+            btnAdd.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            btnAdd.Location = new Point(28, 12);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(134, 37);
+            btnAdd.TabIndex = 10;
+            btnAdd.Text = "Добавить";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // lblUsername
             // 
@@ -79,7 +112,7 @@
             // dgvEvent
             // 
             dgvEvent.AllowUserToAddRows = false;
-            dgvEvent.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvEvent.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvEvent.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dgvEvent.BackgroundColor = Color.White;
             dgvEvent.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -91,37 +124,6 @@
             dgvEvent.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvEvent.Size = new Size(947, 400);
             dgvEvent.TabIndex = 1;
-            // 
-            // btnAdd
-            // 
-            btnAdd.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            btnAdd.Location = new Point(28, 12);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(134, 37);
-            btnAdd.TabIndex = 10;
-            btnAdd.Text = "Добавить";
-            btnAdd.UseVisualStyleBackColor = true;
-            btnAdd.Click += btnAdd_Click;
-            // 
-            // btnEdit
-            // 
-            btnEdit.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            btnEdit.Location = new Point(197, 11);
-            btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(139, 37);
-            btnEdit.TabIndex = 11;
-            btnEdit.Text = "Редактировать";
-            btnEdit.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            btnDelete.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            btnDelete.Location = new Point(373, 11);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(135, 37);
-            btnDelete.TabIndex = 12;
-            btnDelete.Text = "Удалить";
-            btnDelete.UseVisualStyleBackColor = true;
             // 
             // FormEvents
             // 

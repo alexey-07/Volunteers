@@ -146,6 +146,29 @@ namespace Volunteers_Project
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            var formAdd = new FormAdd();
+            formAdd.ShowDialog();
+
+            if (formAdd.DialogResult == DialogResult.OK)
+            {
+                LoadEvents();
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+            var formAdd = new FormAdd((int)dgvEvent.CurrentRow.Cells[0].Value);
+            formAdd.ShowDialog();
+
+            if (formAdd.DialogResult == DialogResult.OK)
+            {
+                LoadEvents();
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
 
         }
     }
